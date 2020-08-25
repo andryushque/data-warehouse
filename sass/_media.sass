@@ -1,6 +1,15 @@
+@media (max-width: 1400px)
+  .hero
+    &-background
+      right: 0
+      width: 75%
+      height: auto
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .hero
+    &-background
+      bottom: -200px
 
 @media (max-width: 991px)
   .container
@@ -13,6 +22,15 @@
     &__item
       margin-right: 10px
       margin-left: 10px
+  .hero
+    padding-top: 75px
+    padding-bottom: 250px
+    &__title
+      max-width: 100%
+      text-align: center
+    &__info
+      max-width: 100%
+      text-align: center
 
 @media (max-width: 767px)
   .container
@@ -24,5 +42,30 @@
       display: none
     &-button
       display: none
+  .hero
+    padding-top: 50px
+    padding-bottom: 50px
+    &-background
+      width: 100%
+      position: relative
+      top: 0
+      bottom: 0
+      padding-top: 25px
+    &__title
+      margin-bottom: 30px
+      font-size: 60px
+    &__info
+      margin-bottom: 30px
+    &-button
+      margin: 0 auto
 
-// @media (max-width: 575px)
+@media (max-width: 575px)
+  .hero
+    &__title
+      margin-bottom: 20px
+      font-size: 40px
+    &__info
+      margin-bottom: 20px
+      font-size: 16px
+    &-button
+      margin: 0 auto
