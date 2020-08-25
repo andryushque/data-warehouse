@@ -1,7 +1,7 @@
 @media (max-width: 1400px)
   .hero
     &-background
-      right: 0
+      right: -25px
       width: 75%
       height: auto
 @media (max-width: 1200px)
@@ -9,6 +9,7 @@
     max-width: 960px
   .hero
     &-background
+      right: 0
       bottom: -200px
 
 @media (max-width: 991px)
@@ -24,13 +25,28 @@
       margin-left: 10px
   .hero
     padding-top: 75px
-    padding-bottom: 250px
     &__title
       max-width: 100%
       text-align: center
     &__info
       max-width: 100%
       text-align: center
+  .information
+    &-wrapper
+      flex-direction: column
+      padding: 50px
+    &__picture
+      width: 100%
+      order: 2
+    &__content
+      width: 100%
+    &__title
+      text-align: center
+    &__text
+      text-align: center
+    &__image
+      width: 75%
+      margin: 0 auto
 
 @media (max-width: 767px)
   .container
@@ -58,6 +74,18 @@
       margin-bottom: 30px
     &-button
       margin: 0 auto
+  .information
+    padding-bottom: 50px
+    &-wrapper
+      padding: 25px
+    &__title
+      margin-bottom: 20px
+      font-size: 32px
+      line-height: 40px
+    &__text
+      font-size: 18px
+    &__image
+      width: 100%
 
 @media (max-width: 575px)
   .hero
@@ -69,3 +97,11 @@
       font-size: 16px
     &-button
       margin: 0 auto
+  .information
+    &__title
+      margin-bottom: 20px
+      font-size: 28px
+      line-height: 36px
+    &__text
+      font-size: 16px
+      line-height: 22px
