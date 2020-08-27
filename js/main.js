@@ -21,5 +21,14 @@ $(document).ready(function () {
     keyboard: {
       enabled: true,
     },
+
+    breakpoints: {
+      1200: {
+        slidesPerView: 1.5,
+      },
+      320: {
+        slidesPerView: 1,
+      }
+    }
   });
 });
