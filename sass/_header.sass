@@ -1,5 +1,10 @@
 .header
-  padding-top: 50px
+  padding-top: 25px
+  padding-bottom: 25px
+  position: fixed
+  width: 100%
+  z-index: 100
+  background: #F8FBFD
   &-wrapper
     position: relative
     display: flex
@@ -76,6 +81,8 @@
         margin-bottom: 0
     &__link
       color: $light-primary
+      &:hover
+        text-decoration: underline
   &__mmenuBtn
     display: none
     border: none
