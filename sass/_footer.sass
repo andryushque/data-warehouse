@@ -12,6 +12,7 @@
 
   &__logotype
     display: flex
+    flex-wrap: wrap
     align-items: center
     margin-bottom: 60px
   &__logo
@@ -46,6 +47,12 @@
   &__title
     margin-top: 10px
     margin-bottom: 30px
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 160%
+    color: $dark-primary
+    word-break: break-word
   &__list
     margin: 0
     padding: 0
@@ -78,9 +85,10 @@
     &:hover
       background-color: $accent
       transition: background-color 0.3s ease
-      
+
   &-bottom
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
   &__text
     display: block
