@@ -9,8 +9,8 @@ $(document).ready(function () {
     slideVisibleClass: 'swiper-slide--visible',
 
     navigation: {
-      nextEl: ".testimonials-slider__button--next",
-      prevEl: ".testimonials-slider__button--prev",
+      nextEl: ".testimonials__button--next",
+      prevEl: ".testimonials__button--prev",
     },
 
     pagination: {
