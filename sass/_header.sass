@@ -1,6 +1,7 @@
 .header
   padding-top: 50px
   &-wrapper
+    position: relative
     display: flex
     justify-content: space-between
     align-items: center
@@ -53,3 +54,37 @@
       height: 14px
       margin-left: 20px
       fill: $accent
+
+  &-mmenu
+    position: absolute
+    top: 20px
+    right: 40px
+    z-index: 10
+    display: none
+    padding: 20px
+    border-radius: 20px
+    background-color: $accent
+    &--visible
+      display: block
+    &__list
+      list-style-type: none
+      margin: 0
+      padding: 0
+    &__item
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+    &__link
+      color: $light-primary
+  &__mmenuBtn
+    display: none
+    border: none
+    outline: none
+    background: none
+    cursor: pointer
+    .fas
+      font-size: 20px
+      color: $dark-primary
+    &--active
+      .fas
+        color: $accent

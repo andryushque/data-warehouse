@@ -31,4 +31,11 @@ $(document).ready(function () {
       }
     }
   });
+
+  /*=== Mobile Menu ===*/
+  var menuButton = $(".header__mmenuBtn");
+  menuButton.on("click", function () {
+    $(".header-mmenu").toggleClass("header-mmenu--visible");
+    $(".header__mmenuBtn").toggleClass("header__mmenuBtn--active");
+  });
 });
